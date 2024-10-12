@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Relatório</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+
+            h1 {
+                font-size: 24px;
+                font-weight: bold;
+                margin-left: 20px;
+            }
+
+            table {
+                width: 300px;
+                border-collapse: collapse;
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+
+            td {
+                border: 1px solid black;
+                padding: 10px;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            td[colspan="3"] {
+                font-weight: bold;
+            }
+
+            td[rowspan="2"] {
+                font-weight: bold;
+            }
+
+            /* Alinha "Valores venda" à direita */
+            td.valores-venda {
+                text-align: right;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Figura 1</h1>
+        <table>
+            <tr>
+                <td>Nome</th>
+                <td>Sobrenome</th>
+                <td>Profissão</th>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>Pereira</td>
+                <td>Engenheiro Civil</td>
+            </tr>
+            <tr>
+                <td>Arthur</td>
+                <td>Silva</td>
+                <td>Economista</td>
+            </tr>
+            <tr>
+                <td>Rosa</td>
+                <td>Andrade</td>
+                <td>Professora</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>Ferreira</td>
+                <td>Jornalista</td>
+            </tr>
+        </table>
+        <h1>Figura 2</h1>
+        <table>
+            <tr>
+                <td colspan="2">Nome Completo</td>
+                <td>Profissão</th>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>Pereira</td>
+                <td>Engenharia Civil</td>
+            </tr>
+            <tr>
+                <td>Arthur</td>
+                <td>Silva</td>
+                <td>Economista</td>
+            </tr>
+            <tr>
+                <td>Rosa</td>
+                <td>Andrade</td>
+                <td>Professora</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>Ferreira</td>
+                <td>Jornalista</td>
+            </tr>
+        </table>
+        <h1>Figura 3</h1>
+        <table>
+            <tr>
+                <td colspan="2">Nome Completo</td>
+                <td>Pedro</td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2">Telefone</td>
+                <td>27 9999-2222</td>
+            </tr>
+            <tr>
+                <td>27 9999-1111</td>
+            </tr>
+
+        </table>
+        <h1>Figura 4</h1>
+        <table>
+            <tr>
+                <td colspan="3">Ano: 2023</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td class="valores-venda">Valores venda</td>
+            </tr>
+            <tr>
+                <td rowspan="2" colspan="2">Descontos</td>
+                <td>100.000</td>
+            </tr>
+            <tr>
+                <td>200.000</td>
+            </tr>
+            <tr>
+                <td colspan="3">300.000</td>
+            </tr>
+        </table>
+    </body>
+</html>
