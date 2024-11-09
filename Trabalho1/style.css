@@ -1,0 +1,96 @@
+/* Estilo do corpo */
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do container principal */
+.container {
+    background-color: #ffffff;
+    width: 960px;
+    margin: auto;
+    padding: 20px; /* Adiciona margem interna ao container */
+    box-sizing: border-box; /* Garante que padding não afete a largura total */
+    border-radius: 8px;
+}
+
+/* Estilo do cabeçalho e rodapé */
+header, footer {
+    background-color: #4682b4;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Estilo do título principal */
+#titulo-principal {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Ajuste da imagem para ocupar a largura do container */
+#imagem-blog {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo da seção */
+.content-box {
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Estilo da tabela */
+table {
+    width: 400px;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* Estilo das células da tabela */
+table td, table th {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilo para imagem dentro da tabela */
+table td img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+/* Efeito hover nas linhas da tabela */
+table tr:hover {
+    background-color: #f5f5f5;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4682b4;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #5a9bd3;
+}
