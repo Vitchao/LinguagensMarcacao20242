@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        form {
+            width: 300px;
+            margin: 10px auto;
+            padding: 10px 20px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"], 
+        input[type="email"], 
+        input[type="password"], 
+        textarea, 
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: 0;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .section-title span {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            line-height: 25px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Cadastrar usuário</h2>
+        
+        <div class="section">
+            <div class="section-title">
+                <span>1</span>
+                <h3>Dados pessoais</h3>
+            </div>
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Senha" required>
+            <input type="password" placeholder="Confirma senha" required>
+            <div>
+                <label><input type="radio" name="idade" value="acima17"> Acima 17</label>
+                <label><input type="radio" name="idade" value="abaixo17"> Abaixo ou igual 17</label>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">
+                <span>2</span>
+                <h3>Perfil</h3>
+            </div>
+            <textarea placeholder="Descrição"></textarea>
+            <select>
+                <option value="frontend">Front-End Developer</option>
+                <option value="backend">Back-End Developer</option>
+                <option value="fullstack">Full-Stack Developer</option>
+            </select>
+            <div>
+                <label><input type="checkbox" name="interesse" value="programador"> Programador</label>
+                <label><input type="checkbox" name="interesse" value="design"> Design</label>
+                <label><input type="checkbox" name="interesse" value="analista"> Analista</label>
+            </div>
+        </div>
+
+        <button type="submit">Enviar dados</button>
+    </form>
+</body>
+</html>
